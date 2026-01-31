@@ -1,0 +1,176 @@
+/* style.css */
+:root {
+    --primary-color: #005eb8; /* NHS Blueのような信頼感のある青 */
+    --accent-color: #e6f3ff;
+    --text-color: #333333;
+    --sub-text-color: #666666;
+    --bg-color: #f8f9fa;
+    --white: #ffffff;
+    --border-radius: 12px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--white);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Index Page: Menu Cards */
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.menu-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+    border-left: 5px solid var(--primary-color);
+}
+
+.menu-card:active {
+    transform: scale(0.98);
+    background-color: var(--accent-color);
+}
+
+.step-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-right: 15px;
+    min-width: 40px;
+}
+
+.step-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.step-subtitle {
+    font-size: 0.85rem;
+    color: var(--sub-text-color);
+    display: block;
+}
+
+/* Section Page: Audio Player */
+.audio-player-container {
+    background: var(--white);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 80px; /* Header height + buffer */
+    z-index: 90;
+}
+
+.play-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.play-button:active {
+    background-color: #004080;
+}
+
+.status-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--sub-text-color);
+}
+
+/* Section Page: Script List */
+.script-list {
+    list-style: none;
+    padding: 0;
+}
+
+.script-item {
+    background: var(--white);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    border-left: 4px solid #ddd;
+}
+
+/* Highlight active item if we add JS sync later */
+.script-item.active {
+    border-left-color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+.script-num {
+    display: inline-block;
+    background: #eee;
+    color: #555;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+
+.ja-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.en-text {
+    font-size: 1rem;
+    color: var(--sub-text-color);
+    display: block;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: var(--sub-text-color);
+    text-decoration: none;
+}
