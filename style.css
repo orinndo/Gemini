@@ -200,3 +200,9 @@ h1 {
 .script-item > div.script-text {
     flex: 1;
 }
+
+/* Sentence playing highlight */
+.script-item.playing {
+    border-left-color: var(--primary-color);
+    background-color: var(--accent-color);
+}
