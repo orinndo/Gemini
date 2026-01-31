@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 Patient Entry - CT Audio Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>01 Patient Entry</h1>
+    </header>
+
+    <div class="container">
+        <div class="audio-player-container">
+            <audio id="guide-audio" preload="auto">
+                <source src="audio/step_01.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <button id="play-btn" class="play-button">
+                <span id="btn-icon">▶</span>
+                <span id="btn-text">音声を再生 / Play Audio</span>
+            </button>
+            <div id="status-text" class="status-text">待機中 / Ready</div>
+        </div>
+
+        <ul class="script-list">
+            <li class="script-item" data-audio="audio/section/01/step_01.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">01</span>
+                <span class="ja-text">本日の通訳はすでに退勤していますので、英語のガイドを使って説明します。</span>
+                <span class="en-text">Our interpreter has already left for the day, so I'll explain using an English guide.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_02.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">02</span>
+                <span class="ja-text">分からないことがあれば、いつでも言ってください。</span>
+                <span class="en-text">Please let me know if anything is unclear.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_03.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">03</span>
+                <span class="ja-text">生年月日を教えていただけますか？</span>
+                <span class="en-text">Could you tell me your date of birth?</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_04.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">04</span>
+                <span class="ja-text">胸にペースメーカー、ICD、CRTなどの心臓デバイスは入っていますか？</span>
+                <span class="en-text">Do you have any heart devices in your chest, like a pacemaker, ICD, or CRT?</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_05.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">05</span>
+                <span class="ja-text">ベッドに座って、靴を脱いでください。</span>
+                <span class="en-text">Please sit on the bed and take off your shoes.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_06.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">06</span>
+                <span class="ja-text">ベッドに仰向けで寝てください。</span>
+                <span class="en-text">Please lie on your back on the bed.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_07.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">07</span>
+                <span class="ja-text">頭はここ、足はあちらです。</span>
+                <span class="en-text">Your head goes here, and your feet go there.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_08.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">08</span>
+                <span class="ja-text">ゆっくり立ち上がって、ベッドに座ってください。</span>
+                <span class="en-text">Please stand up slowly and sit on the bed.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_09.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">09</span>
+                <span class="ja-text">背中の後ろにスライドボードを入れますね。</span>
+                <span class="en-text">I'll put a slide board behind your back.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_10.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">10</span>
+                <span class="ja-text">これからベッドに移りますね。</span>
+                <span class="en-text">Let me slide you onto the bed now.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_11.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">11</span>
+                <span class="ja-text">少し上にずれてください。</span>
+                <span class="en-text">Please slide up a little.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_12.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">12</span>
+                <span class="ja-text">少し下にずれてください。</span>
+                <span class="en-text">Please slide down a little.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_13.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">13</span>
+                <span class="ja-text">少し上に移動しますね。</span>
+                <span class="en-text">I'll slide you up a little.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_14.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">14</span>
+                <span class="ja-text">少し下に移動しますね。</span>
+                <span class="en-text">I'll slide you down a little.</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_15.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">15</span>
+                <span class="ja-text">首はつらくないですか？</span>
+                <span class="en-text">Is your neck comfortable?</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_16.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">16</span>
+                <span class="ja-text">高すぎたり低すぎたりしませんか？</span>
+                <span class="en-text">Is it not too high or low?</span>
+            </div></li>
+            <li class="script-item" data-audio="audio/section/01/step_17.m4a"><button class="sentence-play" type="button" aria-label="Play this sentence">▶</button><div class="script-text">
+                <span class="script-num">17</span>
+                <span class="ja-text">ベッドが動きますので、動かないでください。</span>
+                <span class="en-text">The bed will move now, so please stay still.</span>
+            </div></li>
+        </ul>
+
+        <a href="index.html" class="back-link">← メニューに戻る / Back to Menu</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
