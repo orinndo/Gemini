@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>01 Patient Entry</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="../index.html">← Back</a>
+    <span>Section 01</span>
+  </nav>
+
+  <main class="container">
+    <h2>Patient Entry / 患者入室</h2>
+    <div class="phrase-list">
+
+      <div class="phrase-item" onclick="playAudio('s01_01')">
+        <div class="play-icon">▶</div>
+        <div class="text-content">
+          <p class="ja">本日の通訳はすでに退勤していますので、英語のガイドを使って説明します。</p>
+          <p class="en">Our interpreter has already left for the day, so I&#x27;ll explain using an English guide.</p>
+        </div>
+        <audio id="s01_01" src="../audio/s01_01.mp3"></audio>
+      </div>
+
+      <div class="phrase-item" onclick="playAudio('s01_02')">
+        <div class="play-icon">▶</div>
+        <div class="text-content">
+          <p class="ja">それでは検査室へご案内します。</p>
+          <p class="en">Let me guide you to the CT room.</p>
+        </div>
+        <audio id="s01_02" src="../audio/s01_02.mp3"></audio>
+      </div>
+    </div>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>
